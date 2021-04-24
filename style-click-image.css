@@ -1,0 +1,209 @@
+html{
+    height: 100%;
+
+}
+body{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.image{
+    margin: 20px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color:red;
+background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    overflow-y: visible;
+}
+img:hover:not("#img"){
+    box-shadow:10px 10px 5px darkblue;
+}
+img:not(#img){
+    cursor: pointer;
+}
+.show_card{
+    top: 0%;
+
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 0px;
+    margin: 0px;
+
+    overflow: auto;
+
+
+}
+#zoom_place{
+    top: 0%;
+
+    /*height: 100vh;*/
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+
+    visibility: hidden;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 0px;
+    margin: 0px;
+
+    overflow: auto;
+
+}
+.icon_class{
+    margin: 10px;
+}
+.icon{
+
+    width: 3%;
+    position: relative;
+    left: 0%;
+    padding: 2%;
+    padding-left: 3%;
+    cursor: pointer;
+
+}
+
+#next{
+
+    position: fixed;
+    right: 20px;
+    padding: 1%;
+
+}
+#name{
+    margin-bottom: 0px;
+}
+#image_of_users{
+
+    position: fixed;
+    right: 1%;
+    border-radius: 50%;
+   border:1px solid rgba(128, 128, 128, 0.29);
+    width: 4%;
+    height: 5%;
+    margin-right: auto;
+}
+
+#previouse{
+
+    position: fixed;
+    left: 20px;
+    padding: 1%;
+
+}
+#top{
+    /*height: 4%;*/
+    background-color: white;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+#previouse:hover{
+
+    cursor: pointer;
+
+
+}
+#next:hover{
+    cursor: pointer;
+
+}
+#main-image{
+    text-align: center;
+    width: 100%;
+    height:90% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 20rem;
+    height: 20rem ;
+    padding: 20px;
+
+
+}
+.image img:hover{
+  width:21rem;
+    height: 21rem;
+}
+
+#images_icon{
+    display: flex;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    width: 100%;
+}
+#images_icon img:hover{
+    border: 1px solid #cca1ee;
+}
+#img{
+    max-width: 90%;
+    max-height: 90%;
+}
+#user_connection_info{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 7%;
+    font-size: x-small;
+}
+@media screen and (max-width: 500px) {
+     #top{
+         height: 7%;
+     }
+    .icon{
+        padding: 5%;
+    }
+    #user_connection_info{
+        font-size: xx-small;
+        right: 9%;
+    }
+    .icon_class{
+        height: 60px !important;
+    }
+    #image_of_users{
+        width: 5%;
+    }
+    #previouse{
+        left: 1%;
+    }
+    #next{
+        right: 1%;
+    }
+}
